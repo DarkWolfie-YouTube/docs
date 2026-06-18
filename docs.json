@@ -56,7 +56,8 @@
               "integrations/music/youtube-music.mdx",
               "integrations/music/apple-music.mdx"
             ]
-          }
+          },
+          "integrations/chat"
         ]
       },
       {
