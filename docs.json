@@ -51,7 +51,7 @@
             "group": "Music platforms",
             "icon": "music",
             "pages": [
-              "integrations/music.mdx",
+              "integrations/music",
               "integrations/music/spotify.mdx",
               "integrations/music/youtube-music.mdx",
               "integrations/music/apple-music.mdx"
@@ -63,8 +63,8 @@
         "group": "Streaming",
         "icon": "tv",
         "pages": [
-          "overlay.mdx",
-          "queue.mdx"
+          "overlay",
+          "queue"
         ]
       },
       {
