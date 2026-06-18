@@ -54,7 +54,8 @@
               "integrations/music",
               "integrations/music/spotify",
               "integrations/music/youtube-music",
-              "integrations/music/apple-music"
+              "integrations/music/apple-music",
+              "integrations/music/soundcloud.mdx"
             ]
           },
           "integrations/chat"
@@ -118,5 +119,8 @@
   },
   "fonts": {
     "family": "Dosis"
+  },
+  "interaction": {
+    "drilldown": true
   }
 }

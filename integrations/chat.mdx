@@ -1,6 +1,35 @@
 ---
 title: "Chat integrations"
-sidebarTitle: "Chat"
 description: "Link Twitch, Kick, and YouTube to Request+ from the web dashboard."
 icon: "message"
+sidebarTitle: "Chat"
 ---
+
+Request\+ reads chat from your streaming platforms so viewers can queue songs, run commands, and interact with your overlay. Connect each platform once from the web dashboard and Request\+ handles the rest.
+
+## Supported platforms
+
+| Platform | Connection | Experimental |
+| --- | --- | --- |
+| Twitch | OAuth via dashboard | No |
+| Kick | OAuth via dashboard | No |
+| YouTube | OAuth via dashboard | Yes |
+
+<Note>
+  Available chat actions depend on each platform's API. Moderation features, message deletion, and timeouts are supported where the platform exposes them.
+</Note>
+
+## Connect a platform
+
+1. Open the [Request\+ web dashboard](https://requestplus.xyz).
+2. Click **Connect** next to Twitch, Kick, or YouTube.
+3. Authorize Request\+ in the platform's OAuth window.
+4. Return to the dashboard — the platform will show as **Connected**.
+
+<Tip>
+  You can link multiple platforms at once. Request\+ will listen to chat on all connected platforms simultaneously.
+</Tip>
+
+## Disconnect a platform
+
+From the dashboard, click **Disconnect** next to the platform. Request\+ will stop reading that platform's chat immediately.
