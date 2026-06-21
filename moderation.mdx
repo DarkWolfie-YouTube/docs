@@ -1,0 +1,61 @@
+---
+title: "Moderation commands"
+description: "Use chat commands to manage the moderation queue and who can request songs."
+icon: "shield"
+---
+
+Request+ provides moderator-only chat commands for managing song requests without leaving your stream chat. They work on Twitch, YouTube, and Kick when the Request+ desktop client is connected to that channel.
+
+## Before you begin
+
+- Your Request+ desktop client must be open and connected to the channel.
+- The person running a command must be a moderator or the broadcaster. Request+ checks the role supplied by the chat platform.
+- `!srremove` requires the moderation queue to be enabled in Request+.
+
+## Commands
+
+<AccordionGroup>
+  <Accordion title="!srremove <id>">
+    Removes the queue item with the supplied ID from the moderation queue.
+
+    ```text
+    !srremove 42
+    ```
+
+    Request+ replies to confirm the item was removed. If the moderation queue is not enabled, or the ID is not in the queue, it replies with the reason instead.
+  </Accordion>
+
+  <Accordion title="!srmod enable">
+    Opens song requests to everyone again.
+
+    ```text
+    !srmod enable
+    ```
+  </Accordion>
+
+  <Accordion title="!srmod disable">
+    Restricts song requests to moderators.
+
+    ```text
+    !srmod disable
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Command responses
+
+Request+ replies directly to the chat message. A non-moderator who uses either moderation command receives a moderators-only message. `!srmod` accepts only `enable` or `disable`; any other value returns the usage message.
+
+If the desktop client is not connected, Request+ replies that the client is not open. Open the app and confirm it is connected to the same chat channel before trying again.
+
+## Related chat commands
+
+These are available through the same chat-command service but are not moderation commands:
+
+| Command | What it does |
+| --- | --- |
+| `!srhelp` | Posts the Request+ command summary. |
+| `!queue` | Posts a link to the channel's public request queue. |
+| `!guess <name>` | Submits a Guess the Song answer when that feature is in use. |
+
+For desktop controls such as approval, blocklists, cooldowns, and request limits, see [Queue](/queue).

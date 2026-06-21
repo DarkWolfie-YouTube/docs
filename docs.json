@@ -66,7 +66,8 @@
         "icon": "tv",
         "pages": [
           "overlay",
-          "queue"
+          "queue",
+          "moderation"
         ]
       },
       {
